@@ -27,7 +27,7 @@ class LiveLineChart extends StatefulWidget {
 class _LiveLineChartState extends State<LiveLineChart> {
   _LiveLineChartState() {
     timer =
-        Timer.periodic(const Duration(milliseconds: 200), _updateDataSource);
+        Timer.periodic(const Duration(milliseconds: 20), _updateDataSource);
   }
 
   Timer? timer;
@@ -84,7 +84,7 @@ class _LiveLineChartState extends State<LiveLineChart> {
         primaryYAxis: const NumericAxis(
             axisLine: AxisLine(width: 0),
             majorTickLines: MajorTickLines(size: 0)),
-        series: <LineSeries<_ChartData, int>>[
+        series: <CartesianSeries>[
           LineSeries<_ChartData, int>(
             onRendererCreated:
                 (ChartSeriesController<_ChartData, int> controller) {
