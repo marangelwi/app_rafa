@@ -85,7 +85,7 @@ class _LiveLineChartState extends State<LiveLineChart> {
             axisLine: AxisLine(width: 0),
             majorTickLines: MajorTickLines(size: 0)),
         series: <CartesianSeries>[
-          LineSeries<_ChartData, int>(
+          FastLineSeries<_ChartData, int>(
             onRendererCreated:
                 (ChartSeriesController<_ChartData, int> controller) {
               _chartSeriesController = controller;
