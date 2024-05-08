@@ -107,21 +107,29 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('cardAIc'),
-      ),
-      body: Column(
-        children: [
-          _infoDevice(),
-          Expanded(child: _listDevices()),
-          _inputSerial(),
-          LiveLineChart(times),
-          // _buttons(),
-        ],
-      ),
-    );
+    return Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              'assets/logo.jpeg',
+              width: 200,
+            ),
+            _infoDevice(),
+            Expanded(child: _listDevices()),
+            _inputSerial(),
+            LiveLineChart(times),
+            // _buttons(),
+          ]);
+    //return Scaffold(
+      //appBar: AppBar(
+        //centerTitle: true,
+        //title: const Text(''),
+      //),
+      //body: Column(
+          //children: [
+            
+      //),
+    //);
   }
 
   Widget _controlBT() {
