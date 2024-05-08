@@ -96,8 +96,8 @@ class LocalizationSampleViewState<T extends LocalizationSampleView>
                   dropdownColor: model.drawerBackgroundColor,
                   focusColor: Colors.transparent,
                   isExpanded: true,
-                  underline:
-                      Container(color: Color.fromARGB(255, 58, 182, 255), height: 1),
+                  underline: Container(
+                      color: Color.fromARGB(255, 58, 182, 255), height: 1),
                   value: model.locale,
                   items: _supportedLocales.map((Locale value) {
                     String localeString = value.toString();
@@ -229,8 +229,8 @@ class DirectionalitySampleViewState<T extends DirectionalitySampleView>
                   dropdownColor: model.drawerBackgroundColor,
                   focusColor: Colors.transparent,
                   isExpanded: true,
-                  underline:
-                      Container(color: Color.fromARGB(232, 58, 255, 101), height: 1),
+                  underline: Container(
+                      color: Color.fromARGB(232, 58, 255, 101), height: 1),
                   value: model.textDirection,
                   items: _supportedTextDirection.map((TextDirection value) {
                     return DropdownMenuItem<TextDirection>(

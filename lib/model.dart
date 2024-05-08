@@ -515,7 +515,7 @@ class SampleModel extends Listenable {
   void _updateMaterial2Colors(ThemeData currentThemeData) {
     switch (currentThemeData.brightness) {
       case Brightness.light:
-        backgroundColor = const Color.fromRGBO(246, 246, 246, 1);
+        backgroundColor = Color.fromARGB(255, 110, 159, 179);
         homeCardColor = Colors.white;
         sampleOutputCardColor = const Color.fromRGBO(246, 246, 246, 1);
         leftNavigationBarBackgroundColor =
@@ -533,7 +533,7 @@ class SampleModel extends Listenable {
         break;
 
       case Brightness.dark:
-        backgroundColor = const Color.fromRGBO(33, 33, 33, 1);
+        backgroundColor = Color.fromARGB(255, 204, 235, 69);
         homeCardColor = const Color.fromRGBO(48, 48, 48, 1);
         sampleOutputCardColor = const Color.fromRGBO(33, 33, 33, 1);
         leftNavigationBarBackgroundColor = const Color.fromRGBO(33, 33, 33, 1);
@@ -556,7 +556,7 @@ class SampleModel extends Listenable {
   void _updateMaterial3Colors(ThemeData currentThemeData) {
     switch (currentThemeData.brightness) {
       case Brightness.light:
-        backgroundColor = const Color(0xFFFFFBFE);
+        backgroundColor = Color.fromARGB(255, 190, 106, 169);
         homeCardColor = const Color(0xFFF7F2FB);
         sampleOutputCardColor = const Color(0xFFFFFBFE);
         leftNavigationBarBackgroundColor = const Color(0xFFF7F2FB);
@@ -573,7 +573,7 @@ class SampleModel extends Listenable {
         break;
 
       case Brightness.dark:
-        backgroundColor = const Color(0xFF1C1B1F);
+        backgroundColor = Color.fromARGB(255, 214, 128, 48);
         homeCardColor = const Color(0xFF25232A);
         sampleOutputCardColor = const Color(0xFF1C1B1F);
         leftNavigationBarBackgroundColor = const Color(0xFF25232A);
