@@ -97,7 +97,7 @@ class LocalizationSampleViewState<T extends LocalizationSampleView>
                   focusColor: Colors.transparent,
                   isExpanded: true,
                   underline:
-                      Container(color: const Color(0xFFBDBDBD), height: 1),
+                      Container(color: Color.fromARGB(255, 58, 182, 255), height: 1),
                   value: model.locale,
                   items: _supportedLocales.map((Locale value) {
                     String localeString = value.toString();
@@ -230,7 +230,7 @@ class DirectionalitySampleViewState<T extends DirectionalitySampleView>
                   focusColor: Colors.transparent,
                   isExpanded: true,
                   underline:
-                      Container(color: const Color(0xFFBDBDBD), height: 1),
+                      Container(color: Color.fromARGB(232, 58, 255, 101), height: 1),
                   value: model.textDirection,
                   items: _supportedTextDirection.map((TextDirection value) {
                     return DropdownMenuItem<TextDirection>(
@@ -350,10 +350,10 @@ class ProgressBarColor {
   /// Get the axis line color based on the theme.
   Color get axisLineColor => model.themeData.useMaterial3
       ? model.primaryColor.withAlpha(30)
-      : const Color.fromARGB(30, 0, 169, 181);
+      : Color.fromARGB(206, 225, 79, 16);
 
   /// Get the buffer color based on the theme.
   Color get bufferColor => model.themeData.useMaterial3
       ? model.primaryColor.withAlpha(90)
-      : const Color.fromARGB(90, 0, 169, 181);
+      : Color.fromARGB(199, 163, 0, 181);
 }
