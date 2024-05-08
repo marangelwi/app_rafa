@@ -50,10 +50,9 @@ class _MainPageState extends State<MainPage> {
         debugPrint('ascii data: ${ascii.decode(data)}');
         debugPrint('String data: ${String.fromCharCodes(data)}');
         var stringList = splitter.convert(String.fromCharCodes(data));
-        debugPrint(
-            'Splitter string data: $stringList');
+        debugPrint('Splitter string data: $stringList');
         var largestVal = int.parse(stringList[0]);
-        for (var i = 0; i < stringList.length ; i++) {
+        for (var i = 0; i < stringList.length; i++) {
           var stringListInt = int.parse(stringList[i]);
           if (stringListInt > largestVal) {
             largestVal = stringListInt;
@@ -61,8 +60,7 @@ class _MainPageState extends State<MainPage> {
         }
         debugPrint('Unique value: $largestVal');
         debugPrint('------------------------------------------------');
-        setState(() =>
-            times = largestVal.toString());
+        setState(() => times = largestVal.toString());
       }
       // setState(() => times = ascii.decode(data));
     });
@@ -112,7 +110,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Flutter and Arduino'),
+        title: const Text('cardAIc'),
       ),
       body: Column(
         children: [
