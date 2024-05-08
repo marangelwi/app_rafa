@@ -173,7 +173,7 @@ class _MainPageState extends State<MainPage> {
                       ListTile(
                         title: Text(device.name ?? device.address),
                         trailing: TextButton(
-                          child: const Text('conectar'),
+                          child: const Text('Buscar dispositivo'),
                           onPressed: () async {
                             setState(() => _isConnecting = true);
 
