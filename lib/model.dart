@@ -361,13 +361,13 @@ class SampleModel extends Listenable {
   late Color leftNavigationBarBackgroundColor;
 
   /// Holds theme based web page background color.
-  Color backgroundColor = const Color.fromRGBO(246, 246, 246, 1);
+  Color backgroundColor = Color.fromARGB(255, 255, 255, 255);
 
   /// Holds theme based color of icon.
-  Color drawerIconColor = const Color.fromRGBO(0, 0, 0, 0.54);
+  Color drawerIconColor = const Color.fromARGB(255, 58, 182, 255);
 
   /// Holds theme based input container color.
-  Color subSamplesTabBarColor = const Color.fromRGBO(242, 242, 242, 1);
+  Color subSamplesTabBarColor = Color.fromARGB(48, 2, 183, 255);
 
   /// Holds the theme based card's color.
   Color homeCardColor = Colors.white;

@@ -107,29 +107,26 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset(
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Electrocardiograma'),
+      ),
+      body: Column(
+        children: [
+          Image.asset(
               'assets/logo.png',
-              width: 20,
+              width: 200,
             ),
-            _infoDevice(),
-            Expanded(child: _listDevices()),
-            _inputSerial(),
-            LiveLineChart(times),
-            // _buttons(),
-          ]);
-    //return Scaffold(
-      //appBar: AppBar(
-        //centerTitle: true,
-        //title: const Text(''),
-      //),
-      //body: Column(
-          //children: [
-            
-      //),
-    //);
+          _infoDevice(),
+          Expanded(child: _listDevices()),
+          _inputSerial(),
+          LiveLineChart(times),
+          // _buttons(),
+          
+        ],
+      ),
+    );
   }
 
   Widget _controlBT() {

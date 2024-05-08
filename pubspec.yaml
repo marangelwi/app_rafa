@@ -16,9 +16,6 @@ dependencies:
   syncfusion_flutter_charts: ^25.1.41+2
   syncfusion_localizations: ^25.1.41
 
-assets:
-  - assets/logo.png
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -26,3 +23,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/logo.png
