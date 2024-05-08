@@ -230,7 +230,7 @@ class DirectionalitySampleViewState<T extends DirectionalitySampleView>
                   focusColor: Colors.transparent,
                   isExpanded: true,
                   underline: Container(
-                      color: Color.fromARGB(232, 255, 255, 255), height: 1),
+                      color: Color.fromARGB(255, 58, 182, 255), height: 1),
                   value: model.textDirection,
                   items: _supportedTextDirection.map((TextDirection value) {
                     return DropdownMenuItem<TextDirection>(
@@ -350,10 +350,10 @@ class ProgressBarColor {
   /// Get the axis line color based on the theme.
   Color get axisLineColor => model.themeData.useMaterial3
       ? model.primaryColor.withAlpha(30)
-      : Color.fromARGB(206, 255, 255, 255);
+      : Color.fromARGB(255, 58, 182, 255);
 
   /// Get the buffer color based on the theme.
   Color get bufferColor => model.themeData.useMaterial3
       ? model.primaryColor.withAlpha(90)
-      : Color.fromARGB(198, 255, 255, 255);
+      : Color.fromARGB(255, 58, 182, 255);
 }

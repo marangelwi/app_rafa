@@ -27,7 +27,7 @@ class LiveLineChart extends StatefulWidget {
 class _LiveLineChartState extends State<LiveLineChart> {
   _LiveLineChartState() {
     timer =
-        Timer.periodic(const Duration(milliseconds: 3), _updateDataSource);
+        Timer.periodic(const Duration(milliseconds: 8), _updateDataSource);
   }
 
   Timer? timer;

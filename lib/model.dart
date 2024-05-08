@@ -340,7 +340,7 @@ class SampleModel extends Listenable {
   late ThemeData themeData;
 
   /// Holds theme based color of web outputcontainer.
-  Color textColor = const Color.fromRGBO(51, 51, 51, 1);
+  Color textColor = Color.fromARGB(255, 3, 3, 3);
 
   /// Holds theme based color of home card title.
   late Color homeCardTitleTextColor;
@@ -373,7 +373,7 @@ class SampleModel extends Listenable {
   Color homeCardColor = Colors.white;
 
   /// Holds the theme based divider color.
-  Color dividerColor = const Color.fromARGB(255, 11, 2, 2);
+  Color dividerColor = Color.fromARGB(255, 3, 3, 3);
 
   /// Holds the footer color based theme.
   late Color footerColor;
@@ -515,36 +515,35 @@ class SampleModel extends Listenable {
   void _updateMaterial2Colors(ThemeData currentThemeData) {
     switch (currentThemeData.brightness) {
       case Brightness.light:
-        backgroundColor = Color.fromARGB(255, 110, 159, 179);
+        backgroundColor = Color.fromARGB(255, 58, 182, 255);
         homeCardColor = Colors.white;
-        sampleOutputCardColor = const Color.fromRGBO(246, 246, 246, 1);
+        sampleOutputCardColor = const Color.fromARGB(255, 58, 182, 255);
         leftNavigationBarBackgroundColor =
-            const Color.fromRGBO(246, 246, 246, 1);
-        dividerColor = const Color.fromRGBO(204, 204, 204, 1);
-        drawerIconColor = const Color.fromRGBO(0, 0, 0, 0.54);
-        subSamplesTabBarColor = const Color.fromRGBO(242, 242, 242, 1);
-        drawerTextIconColor = Colors.black;
-        drawerBackgroundColor = const Color.fromRGBO(246, 246, 246, 1);
-        footerColor = const Color.fromRGBO(246, 246, 246, 1);
+            const Color.fromARGB(255, 58, 182, 255);
+        dividerColor = const Color.fromARGB(255, 58, 182, 255);
+        drawerIconColor = const Color.fromARGB(255, 58, 182, 255);
+        subSamplesTabBarColor = const Color.fromARGB(255, 58, 182, 255);
+        drawerTextIconColor = const Color.fromARGB(255, 58, 182, 255);
+        drawerBackgroundColor = const Color.fromARGB(255, 58, 182, 255);
+        footerColor = const Color.fromARGB(255, 58, 182, 255);
 
         // baseNavigationBarTextColor = Colors.white;
         // homeCardTitleTextColor = currentThemeData.colorScheme.primary;
-        textColor = const Color.fromRGBO(51, 51, 51, 1);
+        textColor = Color.fromARGB(255, 1, 1, 1);
         break;
 
       case Brightness.dark:
-        backgroundColor = Color.fromARGB(255, 255, 255, 255);
-        homeCardColor = const Color.fromRGBO(48, 48, 48, 1);
-        sampleOutputCardColor = const Color.fromRGBO(33, 33, 33, 1);
-        leftNavigationBarBackgroundColor = const Color.fromRGBO(33, 33, 33, 1);
-        dividerColor = const Color.fromRGBO(61, 61, 61, 1);
-        drawerIconColor = const Color.fromRGBO(255, 255, 255, 0.65);
-        subSamplesTabBarColor = const Color.fromRGBO(44, 44, 44, 1);
-        drawerTextIconColor = Colors.white;
-        drawerBackgroundColor = isMobile
-            ? const Color.fromRGBO(34, 39, 51, 1)
-            : leftNavigationBarBackgroundColor;
-        footerColor = const Color.fromRGBO(33, 33, 33, 1);
+        backgroundColor = Color.fromARGB(255, 58, 182, 255);
+        homeCardColor = Colors.white;
+        sampleOutputCardColor = const Color.fromARGB(255, 58, 182, 255);
+        leftNavigationBarBackgroundColor =
+            const Color.fromARGB(255, 58, 182, 255);
+        dividerColor = const Color.fromARGB(255, 58, 182, 255);
+        drawerIconColor = const Color.fromARGB(255, 58, 182, 255);
+        subSamplesTabBarColor = const Color.fromARGB(255, 58, 182, 255);
+        drawerTextIconColor = const Color.fromARGB(255, 58, 182, 255);
+        drawerBackgroundColor = const Color.fromARGB(255, 58, 182, 255);
+        footerColor = const Color.fromARGB(255, 58, 182, 255);
 
         // baseNavigationBarTextColor = Colors.white;
         // homeCardTitleTextColor = currentThemeData.colorScheme.primary;
@@ -556,16 +555,16 @@ class SampleModel extends Listenable {
   void _updateMaterial3Colors(ThemeData currentThemeData) {
     switch (currentThemeData.brightness) {
       case Brightness.light:
-        backgroundColor = Color.fromARGB(255, 190, 106, 169);
-        homeCardColor = const Color(0xFFF7F2FB);
+        backgroundColor = const Color.fromARGB(255, 58, 182, 255);
+        homeCardColor = const Color.fromARGB(255, 58, 182, 255);
         sampleOutputCardColor = const Color(0xFFFFFBFE);
         leftNavigationBarBackgroundColor = const Color(0xFFF7F2FB);
         dividerColor = currentThemeData.colorScheme.outlineVariant;
-        drawerIconColor = const Color.fromRGBO(0, 0, 0, 0.54);
+        drawerIconColor = const Color.fromARGB(255, 58, 182, 255);
         subSamplesTabBarColor = const Color(0xFFF7F2FB);
         drawerTextIconColor = currentThemeData.colorScheme.onSurface;
         drawerBackgroundColor = const Color(0xFFFFFBFE);
-        footerColor = const Color(0xFFEEE8F4);
+        footerColor = const Color.fromARGB(255, 58, 182, 255);
 
         // baseNavigationBarTextColor = currentThemeData.colorScheme.surface;
         // homeCardTitleTextColor = currentThemeData.colorScheme.surface;
@@ -573,16 +572,16 @@ class SampleModel extends Listenable {
         break;
 
       case Brightness.dark:
-        backgroundColor = Color.fromARGB(255, 255, 255, 255);
-        homeCardColor = const Color(0xFF25232A);
-        sampleOutputCardColor = const Color(0xFF1C1B1F);
-        leftNavigationBarBackgroundColor = const Color(0xFF25232A);
+        backgroundColor = const Color.fromARGB(255, 58, 182, 255);
+        homeCardColor = const Color.fromARGB(255, 58, 182, 255);
+        sampleOutputCardColor = const Color(0xFFFFFBFE);
+        leftNavigationBarBackgroundColor = const Color(0xFFF7F2FB);
         dividerColor = currentThemeData.colorScheme.outlineVariant;
-        drawerIconColor = const Color.fromRGBO(255, 255, 255, 0.65);
-        subSamplesTabBarColor = const Color(0xFF25232A);
+        drawerIconColor = const Color.fromARGB(255, 58, 182, 255);
+        subSamplesTabBarColor = const Color(0xFFF7F2FB);
         drawerTextIconColor = currentThemeData.colorScheme.onSurface;
-        drawerBackgroundColor = const Color(0xFF1C1B1F);
-        footerColor = const Color(0xFF302D38);
+        drawerBackgroundColor = const Color(0xFFFFFBFE);
+        footerColor = const Color.fromARGB(255, 58, 182, 255);
 
         // baseNavigationBarTextColor =
         //     currentThemeData.colorScheme.primaryContainer;

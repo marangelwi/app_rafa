@@ -139,7 +139,7 @@ class _MainPageState extends State<MainPage> {
           await _bluetooth.requestDisable();
         }
       },
-      tileColor: Colors.black26,
+      tileColor: const Color.fromARGB(255, 58, 182, 255),
       title: Text(
         _bluetoothState ? "Bluetooth encendido" : "Bluetooth apagado",
       ),
@@ -148,7 +148,7 @@ class _MainPageState extends State<MainPage> {
 
   Widget _infoDevice() {
     return ListTile(
-      tileColor: Colors.black12,
+      tileColor: const Color.fromARGB(255, 58, 182, 255),
       title: Text("Conectado a: ${_deviceConnected?.name ?? "ninguno"}"),
       trailing: _connection?.isConnected ?? false
           ? TextButton(
@@ -160,7 +160,7 @@ class _MainPageState extends State<MainPage> {
             )
           : TextButton(
               onPressed: _getDevices,
-              child: const Text("Ver dispositivos"),
+              child: const Text("Buscar dispositivos"),
             ),
     );
   }
@@ -170,7 +170,7 @@ class _MainPageState extends State<MainPage> {
         ? const Center(child: CircularProgressIndicator())
         : SingleChildScrollView(
             child: Container(
-              color: Colors.grey.shade100,
+              color: Color.fromARGB(62, 58, 183, 255),
               child: Column(
                 children: [
                   ...[
@@ -178,7 +178,7 @@ class _MainPageState extends State<MainPage> {
                       ListTile(
                         title: Text(device.name ?? device.address),
                         trailing: TextButton(
-                          child: const Text('Buscar dispositivo'),
+                          child: const Text('Conectar'),
                           onPressed: () async {
                             setState(() => _isConnecting = true);
 
