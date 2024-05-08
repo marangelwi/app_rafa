@@ -350,7 +350,7 @@ class ProgressBarColor {
   /// Get the axis line color based on the theme.
   Color get axisLineColor => model.themeData.useMaterial3
       ? model.primaryColor.withAlpha(30)
-      : Color.fromARGB(206, 225, 79, 16);
+      : Color.fromARGB(206, 255, 255, 255);
 
   /// Get the buffer color based on the theme.
   Color get bufferColor => model.themeData.useMaterial3
