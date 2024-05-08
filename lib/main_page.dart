@@ -111,8 +111,8 @@ class _MainPageState extends State<MainPage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/logo.jpeg',
-              width: 200,
+              'assets/logo.png',
+              width: 20,
             ),
             _infoDevice(),
             Expanded(child: _listDevices()),

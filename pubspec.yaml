@@ -17,7 +17,7 @@ dependencies:
   syncfusion_localizations: ^25.1.41
 
 assets:
-  - assets/logo.jpeg
+  - assets/logo.png
 
 dev_dependencies:
   flutter_test:
