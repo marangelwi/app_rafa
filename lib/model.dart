@@ -573,7 +573,7 @@ class SampleModel extends Listenable {
         break;
 
       case Brightness.dark:
-        backgroundColor = Color.fromARGB(255, 214, 128, 48);
+        backgroundColor = Color.fromARGB(255, 255, 255, 255);
         homeCardColor = const Color(0xFF25232A);
         sampleOutputCardColor = const Color(0xFF1C1B1F);
         leftNavigationBarBackgroundColor = const Color(0xFF25232A);
