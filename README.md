@@ -1,7 +1,5 @@
 # flutter_Bluetooth_application
 
-A new Flutter project that connects the sensor send by an HC-05 module with Arduino right into a display interface in Flutter.
+Esta aplicación permite visualizar una señal de electrocardiograma mediante el uso de un módulo AD8232 (módulo ECG) conectado a Arduino y un módulo bluetooth HC-06 que permite la conexión con el dispositivo móvil.
 
-This is the cloned and modified project. We have changed the URL
-
-Hola soy J V, toma mango
+Gracias a esta aplicación podrás monitorear tu ritmo cardíaco! 
